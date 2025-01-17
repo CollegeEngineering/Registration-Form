@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة تسجيل الطلبة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <img src="https://th.bing.com/th/id/OIP.AUdEk4sY3JqvQYEJ5Ujd6QHaHa?pid=ImgDet&w=174&h=174&c=7&dpr=1.3" alt="شعار الكلية" class="header-logo">
+                <h1>استمارة تسجيل الطلبة في الكلية</h1>
+                <img src="https://pbs.twimg.com/profile_images/982904815188668416/DZt8A_tV_400x400.jpg" alt="شعار الجامعة" class="header-logo">
+            </div>
+            <form id="registrationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">الاسم الأول:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">الاسم الثاني:</label>
+                        <input type="text" id="middleName" name="middleName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thirdName">الاسم الثالث:</label>
+                        <input type="text" id="thirdName" name="thirdName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fourthName">الاسم الرابع:</label>
+                        <input type="text" id="fourthName" name="fourthName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fifthName">اسم خامس (اختياري):</label>
+                        <input type="text" id="fifthName" name="fifthName">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="motherName">اسم الأم الثلاثي:</label>
+                        <input type="text" id="motherName" name="motherName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="placeOfBirth">المسقط:</label>
+                        <select id="placeOfBirth" name="placeOfBirth" required>
+                            <option value="بغداد">بغداد</option>
+                            <option value="البصرة">البصرة</option>
+                            <option value="النجف">النجف</option>
+                            <option value="كربلاء">كربلاء</option>
+                            <option value="بابل">بابل</option>
+                            <option value="الأنبار">الأنبار</option>
+                            <option value="ذي قار">ذي قار</option>
+                            <option value="ديالى">ديالى</option>
+                            <option value="الديوانية">الديوانية</option>
+                            <option value="المثنى">المثنى</option>
+                            <option value="ميسان">ميسان</option>
+                            <option value="واسط">واسط</option>
+                            <option value="كركوك">كركوك</option>
+                            <option value="صلاح الدين">صلاح الدين</option>
+                            <option value="نينوى">نينوى</option>
+                            <option value="أربيل">أربيل</option>
+                            <option value="السليمانية">السليمانية</option>
+                            <option value="دهوك">دهوك</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">الجنس:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="ذكر">ذكر</option>
+                            <option value="أنثى">أنثى</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">تاريخ الميلاد:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parentPhone">رقم هاتف ولي الأمر:</label>
+                        <input type="tel" id="parentPhone" name="parentPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="currentResidence">محافظة السكن الحالي:</label>
+                        <select id="currentResidence" name="currentResidence" required>
+                            <option value="بغداد">بغداد</option>
+                            <option value="البصرة">البصرة</option>
+                            <option value="النجف">النجف</option>
+                            <option value="كربلاء">كربلاء</option>
+                            <option value="بابل">بابل</option>
+                            <option value="الأنبار">الأنبار</option>
+                            <option value="ذي قار">ذي قار</option>
+                            <option value="ديالى">ديالى</option>
+                            <option value="الديوانية">الديوانية</option>
+                            <option value="المثنى">المثنى</option>
+                            <option value="ميسان">ميسان</option>
+                            <option value="واسط">واسط</option>
+                            <option value="كركوك">كركوك</option>
+                            <option value="صلاح الدين">صلاح الدين</option>
+                            <option value="نينوى">نينوى</option>
+                            <option value="أربيل">أربيل</option>
+                            <option value="السليمانية">السليمانية</option>
+                            <option value="دهوك">دهوك</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">العنوان مع أقرب نقطة دالة:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">القسم العلمي:</label>
+                        <select id="department" name="department" required>
+                            <option value="الهندسة المدنية">الهندسة المدنية</option>
+                            <option value="الهندسة الميكانيكية">الهندسة الميكانيكية</option>
+                            <option value="الهندسة الكهربائية">الهندسة الكهربائية</option>
+                            <option value="هندسة الأطراف والمساند الصناعية">هندسة الأطراف والمساند الصناعية</option>
+                            <option value="هندسة الطب الحياتي">هندسة الطب الحياتي</option>
+                            <option value="هندسة العمارة">هندسة العمارة</option>
+                            <option value="هندسة النفط">هندسة النفط</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="graduationYear">سنة التخرج:</label>
+                        <select id="graduationYear" name="graduationYear" required>
+                            <!-- إنشاء السنوات من 2000 إلى 2025 -->
+                            <script>
+                                for (let year = 2000; year <= 2025; year++) {
+                                    document.write(`<option value="${year}">${year}</option>`);
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="examRound">الدور:</label>
+                        <select id="examRound" name="examRound" required>
+                            <option value="الدور الأول">الدور الأول</option>
+                            <option value="الدور الثاني">الدور الثاني</option>
+                            <option value="الدور الثالث">الدور الثالث</option>
+                        </select>
+                    </div>
+                </div>
+
+                          <div class="form-row">
+                    <div class="form-group">
+                        <label for="preAdditionGPA">المعدل قبل الإضافة:</label>
+                        <input type="text" id="preAdditionGPA" name="preAdditionGPA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postAdditionGPA">المعدل بعد الإضافة:</label>
+                        <input type="text" id="postAdditionGPA" name="postAdditionGPA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">الفرع:</label>
+                        <select id="branch" name="branch" required>
+                            <option value="علمي">علمي</option>
+                            <option value="احيائي">احيائي</option>
+                            <option value="تطبيقي">تطبيقي</option>
+                            <option value="مهني">مهني</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="admissionChannel">قناة القبول:</label>
+                        <select id="admissionChannel" name="admissionChannel" required>
+                            <option value="عام">عام</option>
+                            <option value="نقل">نقل</option>
+                            <option value="موازي">موازي</option>
+                            <option value="ذوي شهداء">ذوي شهداء</option>
+                            <option value="أوائل على المعاهد">أوائل على المعاهد</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- السطر الأخير -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="studyType">نوع الدراسة:</label>
+                        <select id="studyType" name="studyType" required>
+                            <option value="صباحية">دراسة صباحية</option>
+                            <option value="مسائية">دراسة مسائية</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="admissionYear">سنة القبول:</label>
+                        <select id="admissionYear" name="admissionYear" required>
+                            <!-- إنشاء السنوات من 2000-2001 إلى 2029-2030 -->
+                            <script>
+                                for (let year = 2000; year <= 2029; year++) {
+                                    document.write(`<option value="${year}-${year+1}">${year}-${year+1}</option>`);
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="isFacultyChild">هل أنت من أبناء الأساتذة:</label>
+                        <select id="isFacultyChild" name="isFacultyChild" required>
+                            <option value="نعم">نعم</option>
+                            <option value="لا">لا</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" onclick="submitForm()">تسجيل</button>
+                    <button type="button" onclick="printForm()">طباعة</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
